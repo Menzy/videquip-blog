@@ -1,5 +1,13 @@
 # Videquip Blog
 
+Current stack: React 18 + Vite + TypeScript + Tailwind CSS.
+
+Quick start
+- Install deps: pnpm install
+- Start dev server: pnpm dev (open http://localhost:5173)
+- Build: pnpm build
+- Preview production build: pnpm preview
+
 Videquip Blog is a modern blogging platform focused on videography equipment—gear reviews, tutorials, and news—for creators who want to make informed purchase decisions and improve their craft. The goal is a clean, fast, and author-friendly site with structured content and great SEO.
 
 Repository: https://github.com/Menzy/videquip-blog
@@ -14,21 +22,15 @@ Repository: https://github.com/Menzy/videquip-blog
 
 ### 🛠️ Tech stack
 - Language: TypeScript
-- Framework: Next.js 14 (App Router)
-- UI: Tailwind CSS (+ optional shadcn/ui for components)
-- Forms/Validation: Zod + React Hook Form
-- Data Layer: Prisma ORM
-- Database: SQLite for local development, PostgreSQL (e.g., Railway/Supabase) for production
-- Auth: NextAuth.js (Email/Providers) — optional for phase 1; can be added for admin area
-- Storage: Local disk in dev; Cloudinary or S3-compatible storage for images in prod (phase 2)
-- Testing: Jest + React Testing Library (unit), Playwright (e2e)
-- Lint/Format: ESLint, Prettier
-- CI: GitHub Actions (lint, typecheck, tests)
-- Package manager: pnpm (or npm if preferred)
+- Framework/Build: React + Vite
+- UI: Tailwind CSS
+- Testing: Jest + React Testing Library (planned), Playwright (planned)
+- Lint/Format: ESLint (flat config), Prettier
+- CI: GitHub Actions (planned)
+- Package manager: pnpm
 
 Assumptions
-- Start as a single repo (monolith) with Next.js API routes for simplicity.
-- Begin with SQLite; switch to Postgres via Prisma migration for production.
+- Start as a single repo (monolith) with client-side routing (to be added) and a simple content layer first.
 
 ### 🧠 AI integration strategy
 
@@ -110,4 +112,5 @@ Use or adapt these in Copilot Chat (or your preferred tool):
 ## Notes
 - Spelling: "equipment" (corrected in this README).
 - Adjust stack choices (e.g., storage, auth) as the project evolves and time allows.
+ - See project reflection for decisions, AI usage, lessons, and next steps: [reflection.md](./reflection.md)
 
